@@ -1,0 +1,33 @@
+{
+  "name": "ecommerce-legacy-solid",
+  "version": "1.0.0",
+  "description": "E-commerce SOLID — Projeto 2 com InversifyJS 7 e infraestrutura intercambiável",
+  "main": "src/server.ts",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev --name init",
+    "prisma:seed": "tsx prisma/seed.ts",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc",
+    "start": "node dist/src/server.js",
+    "test": "tsx --test tests/*.test.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.19.3",
+    "dotenv": "^18.0.9",
+    "express": "^4.21.0",
+    "inversify": "^7.11.0",
+    "nodemailer": "^10.3.1",
+    "reflect-metadata": "^0.2.2",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.19.27",
+    "@types/nodemailer": "^7.0.4",
+    "prisma": "^6.19.3",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.0"
+  }
+}

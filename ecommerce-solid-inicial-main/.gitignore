@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.env
+.npm-cache/
+app.log
+prisma/*.db
+prisma/*.db-journal
+verification*.log
+audit.json
